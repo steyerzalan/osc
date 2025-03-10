@@ -12,7 +12,7 @@ class Oscar {
     }
     public function getOscarsById($OscarId){
         $query = "SELECT m_ID, title, m_desc, pic 
-        FROM movie WHERE , m_ID = ?";
+        FROM movie WHERE m_ID = ?";
         return $this->db->executeSelectQuery($query, [$OscarId]);
     }
     public function getOscarsByType($Mt_name){
